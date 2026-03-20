@@ -1,11 +1,19 @@
 import React from "react";
-import { Search, Bell, Mail, Page } from "../types";
+import { useTranslation } from "react-i18next";
+import { Search, Bell, Mail, Page } from "../../../types/index.ts";
 
 interface NavbarProps {
   onNavigate: (page: Page) => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const nextLang = i18n.language.startsWith("vi") ? "en" : "vi";
+    i18n.changeLanguage(nextLang);
+  };
+
   return (
     <header
       id="main-header"
@@ -28,13 +36,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
           <input
             id="global-search"
             className="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-outline"
-            placeholder="Search discussions, topics, or people..."
+            placeholder={t("navbar.searchPlaceholder")}
             type="text"
           />
         </div>
       </div>
 
       <div className="flex items-center gap-4">
+        <button
+          onClick={toggleLanguage}
+          className="text-sm font-bold text-on-surface-variant hover:text-primary transition-colors cursor-pointer px-2"
+        >
+          {i18n.language.startsWith("vi") ? "VI" : "EN"}
+        </button>
         <button
           id="nav-notifications"
           className="p-2 text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-full active:scale-95"
