@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "searchPlaceholder": "Tìm kiếm thảo luận, chủ đề hoặc người dùng..."
+  },
+  "sidebar": {
+    "nav_home": "Trang Chủ",
+    "nav_ask": "Đặt Câu Hỏi",
+    "nav_leaderboard": "Bảng Xếp Hạng",
+    "nav_profile": "Hồ Sơ",
+    "headers": {
+      "navigation": "Điều Hướng",
+      "subjectTags": "Chủ Đề",
+      "trendingTopics": "Chủ Đề Thịnh Hành"
+    },
+    "subjects": {
+      "math": "Toán",
+      "physics": "Vật Lý",
+      "chemistry": "Hóa Học",
+      "literature": "Ngữ Văn",
+      "english": "Tiếng Anh"
+    },
+    "trending": {
+      "activeDiscussions_one": "{{count}} cuộc thảo luận",
+      "activeDiscussions_other": "{{count}} cuộc thảo luận"
+    }
+  }
+}

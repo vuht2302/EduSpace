@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "searchPlaceholder": "Search discussions, topics, or people..."
+  },
+  "sidebar": {
+    "nav_home": "Home",
+    "nav_ask": "Ask Question",
+    "nav_leaderboard": "Leaderboard",
+    "nav_profile": "Profile",
+    "headers": {
+      "navigation": "Navigation",
+      "subjectTags": "Subject Tags",
+      "trendingTopics": "Trending Topics"
+    },
+    "subjects": {
+      "math": "Math",
+      "physics": "Physics",
+      "chemistry": "Chemistry",
+      "literature": "Literature",
+      "english": "English"
+    },
+    "trending": {
+      "activeDiscussions_one": "{{count}} active discussion",
+      "activeDiscussions_other": "{{count}} active discussions"
+    }
+  }
+}
