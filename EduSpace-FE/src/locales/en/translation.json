@@ -5,6 +5,7 @@
   "sidebar": {
     "nav_home": "Home",
     "nav_ask": "Ask Question",
+    "nav_resource": "Resource",
     "nav_leaderboard": "Leaderboard",
     "nav_profile": "Profile",
     "headers": {
