@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Home, PlusCircle, Trophy, User, Page } from "../../../types/index.ts";
+import { Home, PlusCircle, Trophy, User, Page, BookOpen } from "../../../types/index.ts";
 
 interface SidebarProps {
   currentPage: Page;
@@ -16,6 +16,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const navItems = [
     { id: "home", label: t("sidebar.nav_home"), icon: Home },
     { id: "ask", label: t("sidebar.nav_ask"), icon: PlusCircle },
+    { id: "resource", label: t("sidebar.nav_resource"), icon: BookOpen },
     { id: "leaderboard", label: t("sidebar.nav_leaderboard"), icon: Trophy },
     { id: "profile", label: t("sidebar.nav_profile"), icon: User },
   ];

@@ -16,7 +16,7 @@ import NotFoundPage from "../pages/NotFoundPage.tsx";
 import { Page } from "../../types/index.ts";
 import { scrollToTop } from "../../shared/utils/scrollToTop.ts";
 import { PageContainer } from "../../shared/components/ui/PageContainer.tsx";
-
+import { ResourcePage } from "../../features/resource/index.ts";
 export default function MainRouter() {
   const [currentPage, setCurrentPage] = useState<Page>("home");
   const [selectedQuestionId, setSelectedQuestionId] = useState<string | null>(
@@ -56,6 +56,8 @@ export default function MainRouter() {
         return <Profile />;
       case "leaderboard":
         return <Leaderboard />;
+      case "resource":
+        return <ResourcePage />;
       default:
         return <NotFoundPage />;
     }

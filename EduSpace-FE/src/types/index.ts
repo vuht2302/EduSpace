@@ -1,14 +1,14 @@
-import { 
-  Home, 
-  PlusCircle, 
-  Trophy, 
-  User, 
-  Search, 
-  Bell, 
-  Mail, 
-  ChevronRight, 
-  ThumbsUp, 
-  MessageSquare, 
+import {
+  Home,
+  PlusCircle,
+  Trophy,
+  User,
+  Search,
+  Bell,
+  Mail,
+  ChevronRight,
+  ThumbsUp,
+  MessageSquare,
   ArrowRight,
   CheckCircle2,
   Verified,
@@ -34,10 +34,11 @@ import {
   Users,
   Star,
   ShieldCheck,
-  Eye
+  Eye,
+  BookOpen
 } from 'lucide-react';
 
-export type Page = 'home' | 'question-detail' | 'ask' | 'profile' | 'leaderboard';
+export type Page = 'home' | 'question-detail' | 'ask' | 'profile' | 'leaderboard' | 'resource';
 
 export interface Author {
   id: string;
@@ -105,6 +106,7 @@ export {
   Users,
   Star,
   ShieldCheck,
-  Eye
+  Eye,
+  BookOpen,
 };
 

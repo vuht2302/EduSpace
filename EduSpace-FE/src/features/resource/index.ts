@@ -1,0 +1,1 @@
+export { ResourcePage } from './components/Resource';
